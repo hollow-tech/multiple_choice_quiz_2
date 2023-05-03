@@ -8,10 +8,10 @@ const Container = styled.div`
 
 const Btn = styled.button`
   background-color: #a645c9;
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
-  
 
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
   border-radius: 20px;

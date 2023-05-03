@@ -47,6 +47,7 @@ const Btns = styled.div`
   display: flex;
   gap: 30px;
   justify-content: center;
+  padding: 0 15px;
 `;
 
 const Btn = styled.button`
@@ -58,7 +59,6 @@ const Btn = styled.button`
   color: #fff;
   border-radius: 20px;
   border: none;
-  margin-left: 20px;
 `;
 
 const Answer = styled.div`
