@@ -10,6 +10,7 @@ const Btn = styled.button`
   background-color: #a645c9;
   padding: 10px;
   cursor: pointer;
+  
 
   font-weight: 700;
   color: #fff;

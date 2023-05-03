@@ -13,6 +13,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   list-style: none;
+  font-size: 24px;
 `;
 
 const Container = styled.div`
@@ -25,6 +26,7 @@ const Question = styled.div`
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
+  font-size: 24px;
 `;
 
 const Choice = styled.a`
@@ -47,12 +49,25 @@ const Btns = styled.div`
   justify-content: center;
 `;
 
+const Btn = styled.button`
+  background-color: #2596be;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  margin-left: 20px;
+`;
+
 const Answer = styled.div`
   display: none;
 `;
 const Counter = styled.div`
   color: blue;
   text-align: center;
+  font-size: 30px;
 `;
 
 export const Quiz_1 = (props) => {
@@ -147,12 +162,12 @@ export const Quiz_1 = (props) => {
           ))}
         </List>
         <Btns>
-          <button disabled={page === 1} onClick={handlePrevClick}>
+          <Btn disabled={page === 1} onClick={handlePrevClick}>
             артқа
-          </button>
-          <button disabled={currentRange.length <= page * itemsPerPage} onClick={handleNextClick}>
+          </Btn>
+          <Btn disabled={currentRange.length <= page * itemsPerPage} onClick={handleNextClick}>
             келесі
-          </button>
+          </Btn>
         </Btns>
         <Counter>
           {counter}/{currentRange.length}
