@@ -6,6 +6,10 @@ import { data3 } from "./Quiz_3.data";
 import { data4 } from "./Quiz_4.data";
 import { data5 } from "./Quiz_5.data";
 
+const Wrapper = styled.div`
+  height: 100vh;
+`;
+
 const List = styled.ul`
   list-style: none;
   padding: 0;
@@ -20,6 +24,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px;
+  min-height: 100%;
 `;
 
 const Question = styled.div`
@@ -33,8 +38,9 @@ const Choice = styled.a`
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px 10px;
+  padding: 17px;
   border: 1px solid #000;
+  margin-bottom: 10px;
   /* background-color: red; */
 `;
 
@@ -48,6 +54,7 @@ const Btns = styled.div`
   gap: 30px;
   justify-content: center;
   padding: 0 15px;
+  margin-bottom: 30px;
 `;
 
 const Btn = styled.button`
@@ -68,15 +75,15 @@ const Counter = styled.div`
   color: blue;
   text-align: center;
   font-size: 30px;
+  flex: 1 1 auto;
 `;
 
 export const Quiz_1 = (props) => {
   const [page, setPage] = React.useState(1); // Set the initial page number
   const [isCorrect, setIsCorrect] = React.useState(false);
-  const [key, setKey] = React.useState("");
-  const [isAnswered, setIsAnswered] = React.useState(false);
   const [counter, setCounter] = React.useState(0);
   const [currentRange, setCurrentRange] = React.useState([]);
+  const [shuffledChoices, setShuffledChoices] = React.useState([]);
 
   const itemsPerPage = 1; // Set the number of items per page
 
@@ -87,7 +94,6 @@ export const Quiz_1 = (props) => {
   const paginatedData = currentRange.slice(startIndex, endIndex);
 
   React.useEffect(() => {
-    console.log(`${props.selectData} this is in quiz`);
     switch (props.selectData) {
       case "questions1":
         setCurrentRange(data1);
@@ -109,9 +115,15 @@ export const Quiz_1 = (props) => {
         setCurrentRange(data1);
         break;
     }
+
+    const shuffled = currentRange.map((item) => ({
+      ...item,
+      choices: item.choices.sort(() => Math.random() - 0.5),
+    }));
+    setShuffledChoices(shuffled);
     // Reset the page number when the data changes
     setPage(1);
-  }, [props.selectedOption]);
+  }, [props.selectData, currentRange]);
 
   function handleNextClick() {
     setPage((prevPage) => prevPage + 1); // Increment the page number
@@ -128,15 +140,46 @@ export const Quiz_1 = (props) => {
   //   updatePage();
   // }, [page]);
 
-  const errorHandler = (choice, key) => {
+  function errorHandler(choice, key, id) {
     if (choice === key) {
       setIsCorrect(true);
       setCounter(counter + 1);
+      const updatedData = shuffledChoices.map((item) =>
+        item.id === id
+          ? {
+              ...item,
+              choices: item.choices.map((c) =>
+                c === key ? (
+                  <ListItem
+                    key={key}
+                    style={{
+                      backgroundColor: "green",
+                    }}
+                  >
+                    {c}
+                  </ListItem>
+                ) : (
+                  <ListItem
+                    key={c}
+                    onClick={() => errorHandler(c, key, id)}
+                    style={{
+                      backgroundColor: isCorrect && c === key ? "green" : "",
+                      cursor: isCorrect ? "default" : "pointer",
+                    }}
+                  >
+                    {c}
+                  </ListItem>
+                ),
+              ),
+            }
+          : item,
+      );
+      setShuffledChoices(updatedData);
     }
-  };
+  }
 
   return (
-    <div>
+    <Wrapper>
       <Container>
         <List>
           {paginatedData.map(({ question, id, choices, key }) => (
@@ -144,23 +187,24 @@ export const Quiz_1 = (props) => {
               <Question>{question}</Question>
               <Answer>{key}</Answer>
               <ListInner>
-                {choices
-                  .sort(() => Math.random() - 0.5)
-                  .map((choice, index) => (
-                    <Choice>
-                      <ListItem
-                        key={index}
-                        onClick={() => errorHandler(choice, key)}
-                        style={{ backgroundColor: isCorrect && choice === key ? "green" : "" }}
-                      >
-                        {choice}
-                      </ListItem>
-                    </Choice>
-                  ))}
+                {choices.map((choice, index) => (
+                  <Choice>
+                    <ListItem
+                      key={index}
+                      onClick={() => errorHandler(choice, key)}
+                      style={{ backgroundColor: isCorrect && choice === key ? "green" : "" }}
+                    >
+                      {choice}
+                    </ListItem>
+                  </Choice>
+                ))}
               </ListInner>
             </li>
           ))}
         </List>
+        <Counter>
+          {counter}/{currentRange.length}
+        </Counter>
         <Btns>
           <Btn disabled={page === 1} onClick={handlePrevClick}>
             артқа
@@ -169,10 +213,7 @@ export const Quiz_1 = (props) => {
             келесі
           </Btn>
         </Btns>
-        <Counter>
-          {counter}/{currentRange.length}
-        </Counter>
       </Container>
-    </div>
+    </Wrapper>
   );
 };
