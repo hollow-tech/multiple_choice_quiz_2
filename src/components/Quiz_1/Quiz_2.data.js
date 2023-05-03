@@ -1,0 +1,311 @@
+export const data2 = [
+ 
+  {
+    id: 51,
+    question:
+      "Артикльдердың дұрыс нұсқасын қойыныз       ____United Kingdom is ____ parliamentary monarchy",
+    key: "The/a",
+    choices: ["The/a","- / -","An / -","- / a","An / the"],
+  },
+  {
+    id: 52,
+    question:
+      "Дұрыс нұсқасын тандаңыз   She wants to be a doctor      She____very much interested in biology",
+    key: "is",
+    choices: ["is","were","are","was","am "],
+  },
+  {
+    id: 53,
+    question: "Дұрыс нұсқасын тандаңыз  I’ll let you have it for a_____times",
+    key: "hundred",
+    choices: ["hundred","the hundred","the hundreds","hundreds","hundredth"],
+  },
+  {
+    id: 54,
+    question: "Басқаша оқылатын сөз",
+    key: "gentle",
+    choices: ["gentle","geese","gate","garden","gaze"],
+  },
+  {
+    id: 55,
+    question: "Дұрыс нұсқасын тандаңыз   We leave for London on_____of January",
+    key: "the second ",
+    choices: ["the second ","eleven","twelve","ten","twenty-third"],
+  },
+  {
+    id: 56,
+    question: "Дұрыс нұсқасын тандаңыз  It is his____car",
+    key: "brother’s",
+    choices: ["brother’s","brothers","brothers’s","brother","brother’"],
+  },
+  {
+    id: 57,
+    question: "Дұрыс нұсқасын тандаңыз  That’s the house _____we stayed in May",
+    key: "where",
+    choices: ["where","what","which","who","when"],
+  },
+  {
+    id: 58,
+    question: "Дұрыс жазылған зат есімді танданыз",
+    key: "sheep",
+    choices: ["sheep","boyes","doges","minuts","sheps"],
+  },
+  {
+    id: 59,
+    question: "Зат есімнің жекеше тәуелдік формасының дұрыс нұсқасын таңдаңыз",
+    key: "Aunt’s",
+    choices: ["Aunt’s","Dogs’","Planes","Plants","Neighbours’ "],
+  },
+  {
+    id: 60,
+    question: "a baby  сөзінің көпше түрі",
+    key: "babies",
+    choices: ["babies","babis","babyes","babys","babius"],
+  },
+  {
+    id: 61,
+    question: "_____ice-cream is made of milk and sugar",
+    key: "-",
+    choices: ["-","some","the","a ","an"],
+  },
+  {
+    id: 62,
+    question: "Дұрыс нұсқасын тандаңыз  We usually have dinner at five",
+    key: "what time",
+    choices: ["what time","with whom","what","where","why"],
+  },
+  {
+    id: 63,
+    question: "Етістіктің дұрыс нұсқасын тандаңыз   There____ eight new words in this lesson",
+    key: "are",
+    choices: ["are","been","am","was","is"],
+  },
+  {
+    id: 64,
+    question: "Зат есімнің жекеше тәуелдік формасың дұрыс нұсқасын таңдаңыз",
+    key: "parrot’s",
+    choices: ["parrot’s","dresses’","buses’","monkeys’","factories’"],
+  },
+  {
+    id: 65,
+    question: "t, e, r, d, a  Келесі әріптерден сөз табыңыз",
+    key: "trade",
+    choices: ["trade","daret","etrad","adetr","detra"],
+  },
+  {
+    id: 66,
+    question: "Артикльдердың дұрыс нұсқасын қойыныз   I saw ____nice film on ___Sunday",
+    key: "a | -",
+    choices: ["a | -","the | the","a | the","the | a","a | a"],
+  },
+  {
+    id: 67,
+    question: "Етістіктің дұрыс нұсқасын тандаңыз   There ____many  interesting toys on the table",
+    key: "are",
+    choices: ["are","is","was","am","be"],
+  },
+  {
+    id: 68,
+    question: "Белгіленген әріп басқаша оқылатын сөз",
+    key: "river",
+    choices: ["river","polite","library","kind","recite"],
+  },
+  {
+    id: 69,
+    question: "Дұрыс жазылған зат есемді танданыз",
+    key: "leaves",
+    choices: ["leaves","boyes","doges","minuts","sheepеs"],
+  },
+  {
+    id: 70,
+    question: "Датаның дұрыс нүсқасын табыңыз  30/08",
+    key: "the thirtieth of August",
+    choices:
+      ["the thirtieth of August","the thirty of August ","the thirtieth and August ","the August and thirty","the thirtieth August"],
+  },
+  {
+    id: 71,
+    question: "Дұрыс нұсқасын тандаңыз   The____standing near the window is my____    ",
+    key: "man / father",
+    choices: ["man / father","men / father","mans / father","mans / fathers","men / fathers"],
+  },
+  {
+    id: 72,
+    question: "White сөзіне қарама қарсы сөз",
+    key: "black",
+    choices: ["black","green","yellow","blue","green"],
+  },
+  {
+    id: 73,
+    question: "The 21 st",
+    key: "the twenty first",
+    choices:
+      ["the twenty first","the twenty and first ","the twenty one","the twenty-oneth","the twenty and oneth"],
+  },
+  {
+    id: 74,
+    question: "Зат есімнің көпше формасын таңдаңыз  ",
+    key: "feet",
+    choices: ["feet","price","lorry","hour","match"],
+  },
+  {
+    id: 75,
+    question: "Модаль етістігінің дұрыс нұсқасын табыңыз  You ____take care of your parents ",
+    key: "must",
+    choices: ["must","shall","are","can","may"],
+  },
+  {
+    id: 76,
+    question: "Дұрыс жазылған зат есемді танданыз  8/3",
+    key: "the eighth of March",
+    choices:
+      ["the eighth of March","the eight of March","march and the eight","the eighth and March","the eight and March"],
+  },
+  {
+    id: 77,
+    question: "Дұрыс жауапты таңда   It often ____in this part of the country",
+    key: "rains",
+    choices: ["rains","is raining","was raining","raining","has rained"],
+  },
+  {
+    id: 78,
+    question: "Yшінші типте оқылатын сөз",
+    key: "bird",
+    choices: ["bird","please","bind","match","seed"],
+  },
+  {
+    id: 79,
+    question: "С әрпі сөздің басында  К  болып оқылады",
+    key: "can",
+    choices: ["can","circle","citizen","center","city"],
+  },
+  {
+    id: 80,
+    question: "Дұрыс нұсқасын тандаңыз  Open____door please ",
+    key: "the",
+    choices: ["the","an","those","this","a "],
+  },
+  {
+    id: 81,
+    question: "Дұрыс жауапты таңда   My daughter ________apples  but she likes oranges",
+    key: "doesn’t like",
+    choices: ["doesn’t like","don’t likes","doesn’t likes","did like","hasn’t like"],
+  },
+  {
+    id: 82,
+    question: "Зат есімнің көпше тәуелдік формасың  дұрыс нұсқасын таңдаңыз",
+    key: "children’s stamps",
+    choices: ["children’s stamps","jack’s cap","friend’s wishes","father’s bag","horse’s tails "],
+  },
+  {
+    id: 83,
+    question: "Белгіленген әріп басқаша оқылатын сөз ",
+    key: "mother",
+    choices: ["mother","dog","sock","top","rock"],
+  },
+  {
+    id: 84,
+    question: "Датаның дұрыс нүсқасын табыңыз      27  сәуір",
+    key: "the twenty-seventh of April",
+    choices:
+      ["the twenty-seventh of April","the twentieth seven of April ","the twentieth seventh of April ","the twentieth and seven of April","the twenty and seventh of April"],
+  },
+  {
+    id: 85,
+    question: "a fox  зат есімнің көпше түріндегі  формасын таңдаңыз  ",
+    key: "foxes",
+    choices: ["foxes","foxs","fox","foxss","foxses"],
+  },
+  {
+    id: 86,
+    question: "Дұрыс нұсқасын тандаңыз   I don’t like ____ music",
+    key: "-",
+    choices: ["-","an","those","these","a"],
+  },
+  {
+    id: 87,
+    question: "to be  eтістіктің дұрыс нұсқасын тандаңыз  These books _____interesting",
+    key: "are ",
+    choices: ["are ","is","am ","been","be"],
+  },
+  {
+    id: 88,
+    question: "Белгісіз сөзінің аудармасы",
+    key: "Indefinite",
+    choices: ["Indefinite","Definite","Redefinite","Undefinite","Imdefinite"],
+  },
+  {
+    id: 89,
+    question: "Зат есімнің жекеше тәуелдік формасың  дұрыс нұсқасын таңдаңыз",
+    key: "baby’s",
+    choices: ["baby’s","bakers’","bachelors’","bees’","bedrooms’"],
+  },
+  {
+    id: 90,
+    question: "Yшінші типте оқылатын сөз",
+    key: "more",
+    choices: ["more","pupil","observe ","place","visit"],
+  },
+  {
+    id: 91,
+    question: "Артикльдердың дұрыс нұсқасын қойыныз   Look at ___ table in ___middle of the room",
+    key: "the/the",
+    choices: ["the/the","a/a","-/a","a/the","the/a"],
+  },
+  {
+    id: 92,
+    question: "Белгіленген әріп басқаша оқылатын сөз",
+    key: "knight",
+    choices: ["knight","keep","keel ","keen","kale"],
+  },
+  {
+    id: 93,
+    question: "Дұрыс нұсқасын тандаңыз  This is ___team",
+    key: "my",
+    choices: ["my","mine","I ","ours","me"],
+  },
+  {
+    id: 94,
+    question: "Дұрыс нұсқасын тандаңыз Could you tell me ____ has happened",
+    key: "what",
+    choices: ["what","why","which","where","who"],
+  },
+  {
+    id: 95,
+    question:
+      "to be  Етістіктің дұрыс нұсқасын тандаңыз   What _____ the official language in Kazakhstan",
+    key: "is ",
+    choices: ["is ","are","be","am","been"],
+  },
+  {
+    id: 96,
+    question: "Белгіленген әріп басқаша оқылатын сөз",
+    key: "general",
+    choices: ["general","glass","glade","glad","glitter"],
+  },
+  {
+    id: 97,
+    question: "Етістіктің дұрыс нұсқасын тандаңыз  There ___ telephones in all rooms",
+    key: "are",
+    choices: ["are","was ","am","is","be"],
+  },
+  {
+    id: 98,
+    question: "Есімдіктің дұрыс нұсқасын тандаңыз Is____ your bag",
+    key: "this",
+    choices: ["this","these","those ","whose","which"],
+  },
+  {
+    id: 99,
+    question: "Summer сөзіне қарама қарсы сөз",
+    key: "winter",
+    choices: ["winter","snow","spring ","rain","autumn"],
+  },
+  {
+    id: 100,
+    question: "Өткен шақтың формасын таңдаңыз    go",
+    key: "went",
+    choices: ["went","gone","made","took","ran"],
+  },
+  
+];

@@ -1,0 +1,311 @@
+export const data1 = [
+  {
+    id: 1,
+    question: "Сызықшалардың орнына тиісті әріптерді қойыңыз  T_ke, t_ _k, t_ken",
+    key: "a,oo,a",
+    choices: ["a,oo,a","a,aa,a","i,oo,a","a,uu,a","o,oo,a"],
+  },
+  {
+    id: 2,
+    question: "Дұрыс сөзді тандаңыз  _______white hat is mother’s ",
+    key: "the",
+    choices: ["the","a","_","some","an"],
+  },
+  {
+    id: 3,
+    question: "Есептік сан есім   201",
+    key: "two hundred and one",
+    choices:
+      ["two hundred and one","two hundreds and one ","two hundred one","two and one","two hundreds one"],
+  },
+  {
+    id: 4,
+    question: "Тиісти есімдікті қойыңыз   Mary didn’t know about it    ____was at home",
+    key: "she",
+    choices: ["she","they","me","him","you"],
+  },
+  {
+    id: 5,
+    question: "Саналмайтын зат есім",
+    key: "ground",
+    choices: ["ground","garden","giraffe","game","gymnasium"],
+  },
+  {
+    id: 6,
+    question: "Басқаша оқылатын сөз",
+    key: "government",
+    choices: ["government","gentle","giraffe","general","gymnastics"],
+  },
+  {
+    id: 7,
+    question: "Етістіктен зат есім жасайтын жұрнақты табыңыз",
+    key: "writer",
+    choices: ["writer","written","writ ability","writing","writness "],
+  },
+  {
+    id: 8,
+    question: "Қажетті есімдікті табыңыз   Give me _____pen",
+    key: "your",
+    choices: ["your","you","yours ","we","of yours"],
+  },
+  {
+    id: 9,
+    question:
+      "Зат есімнің жекеше тәуелдік формасының  дұрыс нұсқасын таңдаңыз Do you know my____ daughter?",
+    key: "uncle’s",
+    choices: ["uncle’s","uncle","uncles","uncles’","uncles’s"],
+  },
+  {
+    id: 10,
+    question:
+      "Предлогтың дұрыс нұсқасын тандаңыз  He generally gets up at 7 o’clock_____the morning",
+    key: "in",
+    choices: ["in","by","of","on","at"],
+  },
+  {
+    id: 11,
+    question: "definite  сөзіне қарама- қарсы сөз",
+    key: "Indefinite",
+    choices: ["Indefinite","Redefine","Indefunite","ILdefinite","Imdefinites"],
+  },
+  {
+    id: 12,
+    question: "Дұрыс жазылған сөз",
+    key: "stadium",
+    choices: ["stadium","tedium","stadiun","mastudi","stamuidi"],
+  },
+  {
+    id: 13,
+    question: "Дұрыс нұсқасын тандаңыз  There are____fifty-two weeks in____ year ",
+    key: "- | a",
+    choices: ["- | a","a | a","a | the","the | the","- | -"],
+  },
+  {
+    id: 14,
+    question: "Дұрыс нұсқасын тандаңыз  This is______umbrella   ",
+    key: "Jane’s",
+    choices: ["Jane’s","Janes’","Jane","jf Jane","jf Janes’"],
+  },
+  {
+    id: 15,
+    question: "Сан есімді табыңыз",
+    key: "eighteen",
+    choices: ["eighteen","badly","peaceful","traveller","enjoy"],
+  },
+  {
+    id: 16,
+    question: "Есептік сан есім",
+    key: "forty",
+    choices: ["forty","second","seventh","twelfth","fifth"],
+  },
+  {
+    id: 17,
+    question: "Зат есімнің көпше түрін танданыз",
+    key: "children",
+    choices: ["children","leg","hand","city","table"],
+  },
+  {
+    id: 18,
+    question: "Реттік сан есім",
+    key: "ninth",
+    choices: ["ninth","ten","twenty","one","hundreds"],
+  },
+  {
+    id: 19,
+    question: "Дұрыс нұсқасын тандаңыз   Re___son",
+    key: "a",
+    choices: ["a","y ","i","e","u"],
+  },
+  {
+    id: 20,
+    question: "Зат есімнің көпше түріндегі формасын таңдаңыз  ",
+    key: "mice",
+    choices: ["mice","mouse","mouses","mousses ","mices"],
+  },
+  {
+    id: 21,
+    question: "Артикльдің дұрыс нұсқасын таңдаңыз  How often do you go to______dentist",
+    key: "the",
+    choices: ["the","an","a","that","this"],
+  },
+  {
+    id: 22,
+    question: "Зат есімді тандаңыз",
+    key: "worker",
+    choices: ["worker","usually","rainy","organize","Russian"],
+  },
+  {
+    id: 23,
+    question: "Реттік cан есім   The 30th",
+    key: "the thirtieth",
+    choices: ["the thirtieth","the thirty","the twenty","the fortieth","the twentieth"],
+  },
+  {
+    id: 24,
+    question:
+      "Зат есімнің жекеше тәуелдік формасың  дұрыс нұсқасын таңдаңыз        This is my ______coat",
+    key: "wife’s",
+    choices: ["wife’s","wives","wife","wifes’s","wifes’"],
+  },
+  {
+    id: 25,
+    question: "to be  Етістіктің дұрыс нұсқасын тандаңыз   I____from Kazakhstan",
+    key: "am",
+    choices: ["am","is","be","are","been"],
+  },
+  {
+    id: 26,
+    question: "Етістіктің дұрыс нұсқасын тандаңыз    There ____ a sports center in Moscow",
+    key: "is ",
+    choices: ["is ","be","are","been","were"],
+  },
+  {
+    id: 27,
+    question:
+      "Есімдіктің дұрыс нұсқасын тандаңыз  Jill plays the piano very well   Really? I didn’t know____",
+    key: "that",
+    choices: ["that","his","these","its","those"],
+  },
+  {
+    id: 28,
+    question: "о  әріпінің ерекше оқылуы",
+    key: "post",
+    choices: ["post","wrong","bond","pond","blond"],
+  },
+  {
+    id: 29,
+    question: "Артикльдің дұрыс нұсқасын тандаңыз   That is____egg",
+    key: "an",
+    choices: ["an","a","the","any","un"],
+  },
+  {
+    id: 30,
+    question: "Дұрыс нұсқасын тандаңыз    Harry lives near_____",
+    key: "us",
+    choices: ["us","their","I","my","we"],
+  },
+  {
+    id: 31,
+    question: "a pencil  зат есімнің көпше түріндегі  формасын таңдаңыз  ",
+    key: "pencils",
+    choices: ["pencils","pencls","penciles","pencilees","penceles"],
+  },
+  {
+    id: 32,
+    question:
+      "Предлогтың дұрыс нұсқасын тандаңыз My  little son is good _____ playing computer games",
+    key: "at",
+    choices: ["at","by","on","from","for"],
+  },
+  {
+    id: 33,
+    question: "Дұрыс нұсқасын тандаңыз  This is the house_____ I have been living all my life",
+    key: "where",
+    choices: ["where","when","who","whom","which"],
+  },
+  {
+    id: 34,
+    question: "Дұрыс нұсқасын тандаңыз    She’s got _____toy",
+    key: "a",
+    choices: ["a","an","some","the","at"],
+  },
+  {
+    id: 35,
+    question: "Зат есімнің жекеше тәуелдік формасының дұрыс нұсқасын таңдаңыз   ",
+    key: "reader’s hobby",
+    choices:
+      ["reader’s hobby","people’s organization","men’s rights","workmans’ union","grandfathers’s decision"],
+  },
+  {
+    id: 36,
+    question: "Дұрыс нұсқасын тандаңыз  I’ve got a flat There____ three rooms in it",
+    key: "are\n\n",
+    choices: ["are\n\n","were\n"," was\n"," been\n","is"],
+  },
+  {
+    id: 37,
+    question: "Басқаша оқылатын әріп",
+    key: "geography",
+    choices: ["geography","glassy","globe","glue","glutton"],
+  },
+  {
+    id: 38,
+    question: "Реттік сан есімнің нұсқасың табыңыз   The 35th ",
+    key: "the thirty fifth",
+    choices:
+      ["the thirty fifth","the thirtieth fifth","the thirty and fifth","the thirty five","the thirty fiveth"],
+  },
+  {
+    id: 39,
+    question: "Есімдіктің дұрыс нұсқасын тандаңыз  He published the book____nobody ever read",
+    key: "which",
+    choices: ["which","whose","who","what","whom"],
+  },
+  {
+    id: 40,
+    question: "Body сөзінің көпше түрі",
+    key: "bodies",
+    choices: ["bodies","bodys","bodyis","bodiys","bodyes"],
+  },
+  {
+    id: 41,
+    question: "up  предлогына қарама қарсы предлогты табыныз",
+    key: "down",
+    choices: ["down","on","in","under","at"],
+  },
+  {
+    id: 42,
+    question: "Дұрыс нұсқасын тандаңыз     I’ve got____ brother",
+    key: "a",
+    choices: ["a","an","the","those","on"],
+  },
+  {
+    id: 43,
+    question: "Зат есімнің жекеше тәуелдік формасының дұрыс нұсқасын таңдаңыз",
+    key: "farmer’s",
+    choices: ["farmer’s","farme’s","farmers’","farmeres’","farmers’s"],
+  },
+  {
+    id: 44,
+    question: "Етістіктің дұрыс нұсқасын қойыңыз   Richard______a letter last week",
+    key: "wrote",
+    choices: ["wrote","written","writing","to write","writes"],
+  },
+  {
+    id: 45,
+    question: "Жекеше турде турған зат есімді табыңыз",
+    key: "duty",
+    choices: ["duty","geese","children","men","teeth"],
+  },
+  {
+    id: 46,
+    question: "Дұрыс нұсқасын тандаңыз    I ____a bit lonely these days",
+    key: "am",
+    choices: ["am","do","is","were","are"],
+  },
+  {
+    id: 47,
+    question: "Етістіктің дұрыс нұсқасын тандаңыз  There____some big trees in the garden",
+    key: "are",
+    choices: ["are","am","been","is","was"],
+  },
+  {
+    id: 48,
+    question: "Реттік сан есімнің суффикс нұсқасың табыңыз",
+    key: "th",
+    choices: ["th","ist","ful","teen","ty"],
+  },
+  {
+    id: 49,
+    question: "Есімдіктің дұрыс нұсқасын тандаңыз  He got the job_____ surprised us all",
+    key: "which",
+    choices: ["which","who","what","whose","that’s"],
+  },
+  {
+    id: 50,
+    question: "app __ar  сөзінің дұрыс нұсқасын тандаңыз",
+    key: "e",
+    choices: ["e","i","a","u","y"],
+  },
+  
+];
