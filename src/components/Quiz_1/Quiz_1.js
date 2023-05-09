@@ -4,7 +4,7 @@ import { data1 } from "./Quiz_1.data";
 import { data2 } from "./Quiz_2.data";
 import { data3 } from "./Quiz_3.data";
 import { data4 } from "./Quiz_4.data";
-import { data5 } from "./Quiz_5.data";
+
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -107,9 +107,7 @@ export const Quiz_1 = (props) => {
       case "questions4":
         setCurrentRange(data4);
         break;
-      case "questions5":
-        setCurrentRange(data5);
-        break;
+
       // Default to data1 if the selected option is not recognized
       default:
         setCurrentRange(data1);

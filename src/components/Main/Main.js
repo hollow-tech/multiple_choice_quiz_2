@@ -46,7 +46,7 @@ export const Main = (props) => {
           <option value="questions2">51-100</option>
           <option value="questions3">101-150</option>
           <option value="questions4">151-200</option>
-          <option value="questions5">201-204</option>
+          
         </select>
         <Btn type="submit">кеттік бәрін таста</Btn>
       </form>
