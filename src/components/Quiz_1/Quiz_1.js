@@ -18,19 +18,20 @@ const List = styled.ul`
 const ListItem = styled.li`
   list-style: none;
   font-size: 24px;
+  padding: 17px;
 `;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 5px 15px;
   min-height: 100%;
 `;
 
 const Question = styled.div`
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 0 20px 10px 20px;
   font-size: 24px;
 `;
 
@@ -38,7 +39,6 @@ const Choice = styled.a`
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 17px;
   border: 1px solid #000;
   margin-bottom: 10px;
   /* background-color: red; */
