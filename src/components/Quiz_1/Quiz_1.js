@@ -5,7 +5,6 @@ import { data2 } from "./Quiz_2.data";
 import { data3 } from "./Quiz_3.data";
 import { data4 } from "./Quiz_4.data";
 
-
 const Wrapper = styled.div`
   height: 100vh;
 `;
@@ -139,15 +138,15 @@ export const Quiz_1 = (props) => {
   // }, [page]);
 
   function errorHandler(choice, key, id) {
-    if (choice === key) {
+    if (choice == key) {
       setIsCorrect(true);
       setCounter(counter + 1);
       const updatedData = shuffledChoices.map((item) =>
-        item.id === id
+        item.id == id
           ? {
               ...item,
               choices: item.choices.map((c) =>
-                c === key ? (
+                c == key ? (
                   <ListItem
                     key={key}
                     style={{
@@ -161,7 +160,7 @@ export const Quiz_1 = (props) => {
                     key={c}
                     onClick={() => errorHandler(c, key, id)}
                     style={{
-                      backgroundColor: isCorrect && c === key ? "green" : "",
+                      backgroundColor: isCorrect && c == key ? "green" : "",
                       cursor: isCorrect ? "default" : "pointer",
                     }}
                   >
@@ -190,7 +189,7 @@ export const Quiz_1 = (props) => {
                     <ListItem
                       key={index}
                       onClick={() => errorHandler(choice, key)}
-                      style={{ backgroundColor: isCorrect && choice === key ? "green" : "" }}
+                      style={{ backgroundColor: isCorrect && choice == key ? "green" : "" }}
                     >
                       {choice}
                     </ListItem>
